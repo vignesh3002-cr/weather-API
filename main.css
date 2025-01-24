@@ -1,0 +1,38 @@
+#container{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr 1fr;
+}
+.img{
+    height: 250px;
+    width: 250px;
+}
+.btn{
+
+    height: 25px;
+    width: 73.5%;
+    display: block;
+    color: black;
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+    font-size: 4rem;
+}
+h3{
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 10%;
+}
+#tempimg{
+    height: 80px;
+    width: 80px;
+}
+#temp{
+    width: 100%;
+    background-color: aqua;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+}
