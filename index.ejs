@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Weather Data</title>
+</head>
+<body id="by">
+    <% if(locals.temp){%>
+        <div id="temp">
+            <h2>Temp:</h2>
+            <h3><img src="images\temperature.png" id="tempimg"><%= temp %></h3>
+        </div>
+
+    <% }else{%>
+        <h1>🌤️Weather Report Around Various District:</h1>
+        <div id="container">
+
+            
+                <div>
+                    <form action="/weather"  method="post">
+                        <img src="images\Chennai.png" class="img" >
+                        <button type="submit" value="chennai" name="choice"  class="btn">Chennai</button>
+                    </form>
+                </div>  
+                <div>
+                    <form action="/weather"  method="post">
+                        <img src="images\madurai.png" class="img">
+                        <button type="submit" value="madurai" name="choice"  class="btn">Madurai</button>
+                    </form>
+                </div>
+                <div>
+                    <form action="/weather"  method="post">
+                        <img src="images\kanyakumari.jpg" class="img">
+                        <button type="submit" value="kanyakumari" name="choice"  class="btn">kanyakumari</button>
+                    </form>
+                </div>
+                <div>
+                    <form action="/weather"  method="post">
+                        <img src="images\coimbatore.jpg" class="img">
+                        <button type="submit" value="coimbatore" name="choice"  class="btn">Coimbatore</button>
+                    </form>
+                </div>
+                <div>
+                    <form action="/weather"  method="post">
+                        <img src="images\salem.jpg" class="img">
+                        <button type="submit" value="salem" name="choice"  class="btn">Salem</button>
+                    </form>
+                </div>
+                <div>
+                    <form action="/weather"  method="post">
+                        <img src="images\ramanathapuram.jpg" class="img">
+                    
+                        <button type="submit" value="ramanathapuram" name="choice"  class="btn">Ramanathapuram</button>
+                    </form>
+                </div>
+                <div>
+                    <form action="/weather"  method="post">
+                        <img src="images\nilgiris.webp" class="img">
+                        <button type="submit" value="nilgiris" name="choice"  class="btn">Nilgiris</button>
+                    </form>
+                </div> 
+                <div>
+                    <form action="/weather"  method="post">
+                        <img src="images\vellore.jpg" class="img">
+                        <button type="submit" value="vellore" name="choice"  class="btn">Vellore</button>
+                    </form>
+                </div>    
+                <div>
+                    <form action="/weather"  method="post">
+                        <img src="images\Thiruvannamalai.jpg" class="img">
+                        <button type="submit" value="thiruvannamalai" name="choice"  class="btn">Thiruvannamalai</button>
+                    </form>
+                </div>   
+                <div>
+                    <form action="/weather"  method="post">
+                        <img src="images\kanchipuram.jpg" class="img">
+                        <button type="submit" value="kanchipuram" name="choice"  class="btn">Kanchipuram</button>
+                    </form>
+                </div>  
+                <div>
+                    <form action="/weather"  method="post">
+                        <img src="images\karur.jpg" class="img">
+                        <button type="submit" value="karur" name="choice"  class="btn">karur</button>
+                    </form>
+                </div>   
+                <div>
+                    <form action="/weather"  method="post">
+                        <img src="images\thanjavur.jpeg" class="img">
+                        <button type="submit" value="thanjavur" name="choice"  class="btn">Thanjavur</button>
+                    </form>
+                </div>          
+        </div>
+    <% } %>
+    
+</body>
+</html>
